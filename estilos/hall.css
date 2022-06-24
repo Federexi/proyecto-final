@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-color: #E8E7E9;
+}
+
+header {
+    background-color: #1A2542;
+}
+
+.logo {
+    margin-top: -15px;
+    margin-bottom: -30px;
+}
+
+.logo a:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 darkblue);
+}
+
+.divider {
+    margin-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
+.collapse.navbar-collapse.d-flex.justify-content-center li a{
+    margin-top: -10px;
+    color: #FFFFFF;
+}
+
+nav ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'lato';
+    font-weight: 600;
+    transition: 0s color;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #3c5599;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover {
+    transition-delay: 0.1s;
+    color: #3c5599 !important;
+    border-radius: 20px;
+}
+
+.fondo img{
+    margin-top: -16px;
+    width: 100%;
+    height: 420px;
+}
+
+section {
+    position: absolute;
+    display: grid;
+    background-color: #FFFFFF;
+    margin-top: -120px;
+    margin-left: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'lato';
+    grid-template-columns: 136px 226px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 10px;
+}
+
+section img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 130px;
+    height: 70px;
+    justify-content: center;
+    align-self: center;
+}
+
+section h1 {
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 27px;
+}
+
+section p {
+    font-size: 15px;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+section a {
+    background-color: #1A2542;
+    border-radius: 20px;
+    margin-right: auto;
+    padding: 10px 64px 10px 64px;
+    text-decoration: none;
+    color: #FFFF;
+    box-shadow: 1px 1px 5px black;
+    transition: 0s color background-color;
+}
+
+section a:hover {
+    transition-delay: 0.12s;
+    color: #dbd9d9;
+    background-color: #1f2d52;
+}
+
+section2 {
+    position: absolute;
+    display: grid;
+    background-color: #FFFFFF;
+    margin-top: -120px;
+    margin-left: 750px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'lato';
+    grid-template-columns: 136px 226px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 10px;
+}
+
+section2 img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin-left: 20px;
+    width: 90px;
+    height: 70px;
+    justify-content: center;
+    align-self: center;
+}
+
+section2 h2 {
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 27px;
+}
+
+section2 p {
+    font-size: 15px;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+section2 a {
+    background-color: #1A2542;
+    border-radius: 20px;
+    margin-right: auto;
+    padding: 10px 64px 10px 64px;
+    text-decoration: none;
+    color: #FFFF;
+    box-shadow: 1px 1px 5px black;
+    transition: 0s color background-color;
+}
+
+section2 a:hover {
+    transition-delay: 0.12s;
+    color: #dbd9d9;
+    background-color: #1f2d52;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A2542;
+    padding-top: 5px;
+}
+
+footer a img {
+    filter: brightness(1) invert(100%);
+    transition: 0s filter;
+}
+
+footer a img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 blue);
+    transition-delay: 0.1s;
+}
+
+/* Responsive*/
+
+
+/*Mobile*/
+@media screen and (min-width: 320px ) and (max-width: 682px) {
+
+    .tarjetas {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    section {
+        margin-top: -150px;
+        margin-left: -2px;
+        display: grid;
+        grid-template-columns: 125px 170px;
+        grid-template-rows: 50px 50px 50px;
+        padding: 4px;
+    }
+
+    section img {
+        width: 120px;
+        height: 60px;
+    }
+
+    section h1 {
+        margin-top: 15px;
+        font-size: 22px;   
+    }
+
+    section p {
+        font-size: 13px;
+        margin-top: 1px;
+    }
+
+    section a {
+        margin-left: -5px;
+        padding: 11px 45px 0px 45px;
+    }
+
+    section2 {
+        display: grid;
+        grid-template-columns: 125px 170px;
+        grid-template-rows: 50px 50px 50px;
+        padding: 4px;
+        margin-left: -2px;
+        margin-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    section2 img {
+        width: 70px;
+        height: 80px;
+    }
+
+    section2 h2 {
+        margin-top: 15px;
+        font-size: 21px;   
+    }
+
+    section2 p {
+        font-size: 13px;
+        margin-top: -4px;
+    }
+
+    section2 a {
+        margin-left: -5px;
+        padding: 13px 40px 0px 35px;
+    }
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 683px) and (max-width: 768px) {
+
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    section {
+        margin-top: -130px;
+        margin-left: -350px;
+        display: grid;
+        grid-template-columns: 125px 170px;
+        grid-template-rows: 50px 50px 50px;
+        padding: 10px;
+    }
+
+    section img {
+        width: 120px;
+        height: 60px;
+    }
+
+    section h1 {
+        margin-top: 15px;
+        font-size: 22px;   
+    }
+
+    section p {
+        font-size: 13px;
+        margin-top: 1px;
+    }
+
+    section a {
+        margin-left: -5px;
+        padding: 11px 45px 0px 45px;
+    }
+
+    section2 {
+        display: grid;
+        grid-template-columns: 125px 170px;
+        grid-template-rows: 50px 50px 50px;
+        margin-left: 350px;
+        padding: 4px;
+        margin-top: -130px;
+    }
+
+    section2 img {
+        width: 70px;
+        height: 80px;
+    }
+
+    section2 h2 {
+        margin-top: 15px;
+        font-size: 21px;   
+    }
+
+    section2 p {
+        font-size: 13px;
+        margin-top: -4px;
+    }
+
+    section2 a {
+        margin-left: -5px;
+        padding: 13px 40px 0px 35px;
+    }
+}
+
+/*Laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+    }
+
+    section {
+        margin-top: -130px;
+        margin-left: -390px;
+        display: grid;
+        grid-template-columns: 145px 180px;
+        grid-template-rows: 50px 50px 50px;
+        padding: 4px;
+    }
+
+    section img {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        margin-left: 10px;
+        width: 120px;
+        height: 60px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    section h1 {
+        margin-left: -5px;
+        margin-top: 15px;
+        font-size: 24px;   
+    }
+
+    section p {
+        font-size: 14px;
+        margin-left: -5px;
+        margin-top: 1px;
+    }
+
+    section a {
+        margin-left: -8px;
+        padding: 13px 50px 0px 50px;
+    }
+
+    section2 {
+        margin-top: -130px;
+        margin-left: 390px;
+        display: grid;
+        grid-template-columns: 145px 180px;
+        grid-template-rows: 50px 50px 50px;
+        padding: 4px;
+    }
+
+    section2 img {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        margin-left: 40px;
+        width: 70px;
+        height: 80px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    section2 h2 {
+        margin-top: 14px;
+        font-size: 22px;   
+    }
+
+    section2 p {
+        font-size: 14px;
+        margin-top: -6px;
+    }
+
+    section2 a {
+        margin-left: -5px;
+        padding: 13px 40px 0px 35px;
+    }   
+}

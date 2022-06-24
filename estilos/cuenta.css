@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-color: #E8E7E9;
+    font-family: 'lato';
+}
+
+header {
+    background-color: #1A2542;
+}
+
+.logo {
+    margin-top: -15px;
+}
+
+.logo a:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 darkblue);
+}
+
+.navbar.navbar-light.mx-auto.logo {
+    margin-bottom: -30px;
+}
+
+.salir {
+    margin-top: -60px;
+    margin-right: 100px;
+}
+
+.navbar-brand.mb-0 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'lato';
+    color: #fff;
+}
+
+.navbar-brand.mb-0.b {
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+}
+
+.navbar-brand.mb-0:hover {
+    color: #2e4175;
+    transition-delay: 0.1s;
+}
+
+.nav2 {
+    background-color: #24BEFF;    
+    padding-top: 10px;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.nav2 ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'lato';
+    font-weight: bold;
+    transition: 0.2s ease-out;
+    position: relative;
+}
+
+
+.nav2 ul li a::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #3c5599;
+  transform-origin: bottom right;
+  transition: 0.25s ease-out;
+}
+
+.nav2 ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav2 ul li a:hover {
+    transition-delay: 0.15s;
+    color: #fff !important;
+    border-radius: 20px;
+}
+
+#cuenta { 
+    color: rgb(255, 255, 255);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A2542;
+    padding-top: 5px;
+}
+
+footer a img {
+    filter: brightness(1) invert(100%);
+    transition: 0s filter;
+}
+
+footer a img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 blue);
+    transition-delay: 0.1s;
+}

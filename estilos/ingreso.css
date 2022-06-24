@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-color: #E8E7E9;
+    font-family: 'lato';
+}
+
+header {
+    background-color: #1A2542;
+}
+
+.logo {
+    margin-top: -15px;
+    margin-bottom: -30px;
+}
+
+.logo a:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 darkblue);
+}
+
+.divider {
+    margin-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
+.collapse.navbar-collapse.d-flex.justify-content-center li a{
+    margin-top: -10px;
+    color: #FFFFFF;
+}
+
+nav ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'lato';
+    font-weight: 600;
+    transition: 0s color;
+    position: relative;
+}
+
+
+nav ul li a::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #3c5599;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover {
+    transition-delay: 0.1s;
+    color: #3c5599 !important;
+    border-radius: 20px;
+}
+
+.ingresar {
+    color: #3c5599;
+}
+
+main h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 135px
+}
+
+main form {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 300px;
+    border: none;
+    background-color: #E8E7E9;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1A2542;
+}
+
+.text:focus {
+    outline: none;
+    border-bottom: 1px solid #3e5697;
+}
+
+.password {
+    width: 300px;
+    border: none;
+    background-color: #E8E7E9;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #1A2542;
+    margin-bottom: 20px;
+}
+
+.password:focus {
+    outline: none;
+    border-bottom: 1px solid #3e5697;
+}
+
+.submit {
+    border: none;
+    background-color: #1A2542;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    margin-right: 920px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #FFFF;
+    box-shadow: 0px 0px 3px black;
+    transition: 0s color background-color;
+}
+
+main form a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #a8a7a7;
+    transition: 0s color;
+}
+
+main form a:hover {
+    transition-delay: 0.12s;
+    color: #fff;
+}
+
+.contraseña {
+    margin-right: 990px;
+}
+
+.cuenta {
+    margin-right: 1055px;
+}
+
+.submit:hover {
+    transition-delay: 0.12s;
+    cursor: pointer;
+    color: #dbd9d9;
+    background-color: #1f2d52;
+}
+
+main img {
+    float: right;
+    margin-top: -351px;
+    width: 640px;
+    height: 512px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A2542;
+    padding-top: 5px;
+}
+
+footer a img {
+    filter: brightness(1) invert(100%);
+    transition: 0s filter;
+}
+
+footer a img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 blue);
+    transition-delay: 0.1s;
+}
+
+/*Receptive*/
+
+/*Mobile*/
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    main img {
+        display: none;
+    }
+        
+    main h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        font-size: 27px;
+        margin-left: 0px;
+    }
+
+    main form {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 1px;
+    }
+
+    main form input {
+        width: 210px;
+    }
+
+    main form a {
+        font-size: 13px;
+    }
+    
+    .contraseña {
+        margin-right: 0px;
+    }
+
+    .cuenta {
+        margin-right: 0px;
+    }
+
+
+}
+
+/*Tablet*/
+@media screen and (min-width: 561px) and (max-width: 719px) {
+    
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }   
+
+    main img {
+        margin-top: -265px;
+        width: 100%;
+    }
+    
+    main h1 {
+        margin-top: 60px;
+        font-size: 24px;
+        margin-left: 12px
+    }
+
+    main form {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main form input {
+        width: 200px;
+    }
+
+    
+    .text {
+        background: transparent;
+    }
+
+    .password {
+        background: transparent;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgb(228, 225, 225)
+    }
+
+    .contraseña {
+        margin-right: 359px;
+        color: rgb(228, 225, 225);
+    }
+
+    .cuenta {
+        margin-right: 432px;
+        color: rgb(228, 225, 225);
+    }
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 800px) {
+    
+    nav {
+        margin-left: -44px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }   
+
+    main img {
+        margin-top: -296px;
+        width: 100%;
+    }
+    
+    main h1 {
+        margin-top: 80px;
+        font-size: 30px;
+        margin-left: 20px
+    }
+
+    main form {
+        margin-left: 65px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main form input {
+        width: 230px;
+    }
+
+    
+    .text {
+        background: transparent;
+    }
+
+    .password {
+        background: transparent;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgb(228, 225, 225)
+    }
+
+    .contraseña {
+        margin-right: 503px;
+        color: rgb(228, 225, 225);
+    }
+
+    .cuenta {
+        margin-right: 576px;
+        color: rgb(228, 225, 225);
+    }   
+}
